@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>调色板</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="color-picker">
+    <h1>调色板</h1>
+    <p><strong>红色：</strong> <span id="red-value">0</span></p>
+    <input type="range" min="0" max="255" step="1" value="0" class="slider" id="red-slider">
+    <p><strong>绿色：</strong> <span id="green-value">0</span></p>
+    <input type="range" min="0" max="255" step="1" value="0" class="slider" id="green-slider">
+    <p><strong>蓝色：</strong> <span id="blue-value">0</span></p>
+    <input type="range" min="0" max="255" step="1" value="0" class="slider" id="blue-slider">
+
+    <p><strong>16进制：#</strong> <span id="hex-value">000000</span></p>
+
+    <hr>
+
+    <div id="color-preview"></div>
+
+    <div class="instructions">
+        <h2>使用说明</h2>
+        <p>拖拽滑块，调节相应颜色值，预览调整后的颜色效果。</p>
+        <p>调节颜色值时，数值会同时显示在颜色条下方的数值区域中，数值区域显示值的范围为0到255。</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
